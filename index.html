@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>POWDER ADI GAMER'S • POWDER ADI</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#070911;color:#f6f7fb;font-family:Arial,Inter,sans-serif}
+button,input{font:inherit}.app{max-width:1180px;margin:auto;padding:16px}
+header{display:flex;justify-content:space-between;align-items:center;padding:15px 2px;position:sticky;top:0;background:#070911ed;z-index:5}.logo{display:flex;gap:10px;align-items:center;font-weight:900;letter-spacing:1px}.mark{width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,#a855f7,#ec4899);display:grid;place-items:center}.logo b{color:#c084fc}.logo small{display:block;color:#727b90;font-size:8px;letter-spacing:2px}nav button{background:none;border:0;color:#adb5c9;cursor:pointer;margin-left:8px}
+.btn{border:0;border-radius:11px;padding:12px 17px;background:#8b5cf6;color:#fff;font-weight:800;cursor:pointer}.gray{background:#202637}.red{background:#ef4444}.green{background:#16a34a}.small{padding:8px 11px;font-size:13px}
+.hero{padding:55px 28px;border:1px solid #282d3e;border-radius:25px;background:radial-gradient(circle at 85% 15%,#43205a,#111421 35%,#0b0e17 72%)}.eyebrow{color:#c084fc;font-size:12px;font-weight:900;letter-spacing:2px}.hero h1{font-size:clamp(35px,7vw,67px);line-height:.98;margin:12px 0}.hero p,.muted{color:#9099ae}.section{padding:28px 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:16px}.card,.panel,.form{background:#101421;border:1px solid #252b3d;border-radius:18px;padding:19px}.card h3{margin:10px 0 6px}.tag{display:inline-block;padding:5px 9px;border-radius:99px;background:#1e293b;color:#c4b5fd;font-size:11px;font-weight:900}.price{font-size:21px;font-weight:900;margin:14px 0}.hidden{display:none}.form{max-width:650px;margin:25px auto}label{display:block;color:#aeb6ca;margin:14px 0 7px}input{width:100%;padding:12px;border-radius:10px;border:1px solid #353c51;background:#090c14;color:#fff}.steps{display:flex;gap:5px;margin:20px 0}.steps i{height:5px;flex:1;border-radius:5px;background:#2b3142}.steps i.on{background:#a855f7}.notice{background:#171c2a;border-radius:11px;padding:12px;color:#b7bfd2;margin:14px 0}.upload{border:1px dashed #555e77;border-radius:13px;padding:18px;text-align:center;margin:15px 0}.upload input{border:0;background:none}.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:18px 0}.stat{padding:17px;background:#121827;border:1px solid #272e40;border-radius:15px}.stat strong{display:block;font-size:29px;color:#c084fc}.tablewrap{overflow:auto}.table{width:100%;border-collapse:collapse;min-width:850px}.table th,.table td{padding:11px;border-bottom:1px solid #252b3d;text-align:left}.table th{color:#8f98ad;font-size:12px}.actions{display:flex;gap:7px;flex-wrap:wrap}.slots{margin-top:25px}.slot{padding:12px 14px;border-radius:12px;background:#161b29;border:1px solid #292f42;margin:8px 0}.status{font-weight:900;font-size:12px}.pending{color:#fbbf24}.approved{color:#4ade80}.rejected{color:#fb7185}.modal{position:fixed;inset:0;background:#000b;display:grid;place-items:center;padding:18px;z-index:20}.modal .panel{width:min(560px,100%)}.proof{max-width:230px;max-height:150px;border-radius:10px;border:1px solid #343b50}.empty{color:#747e94;padding:15px 0}footer{text-align:center;color:#626b7f;padding:35px}
+
+/* POWDER ADI GAMER'S ICONIC THEME */
+body{background:#03050b;overflow-x:hidden;background-image:radial-gradient(circle at 15% 15%,rgba(255,70,0,.16),transparent 28%),radial-gradient(circle at 85% 25%,rgba(0,210,255,.14),transparent 30%),radial-gradient(circle at 50% 90%,rgba(170,0,255,.13),transparent 35%),linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);background-size:auto,auto,auto,40px 40px,40px 40px}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(ellipse at center,transparent 35%,rgba(0,0,0,.72) 100%)}
+header{background:rgba(3,5,11,.82)!important;backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.08)}
+.mark{background:linear-gradient(135deg,#ff4d00,#ff008c 48%,#5b2cff);box-shadow:0 0 28px rgba(255,65,0,.32),inset 0 0 20px rgba(255,255,255,.14)}
+.logo b{color:#ff6a00!important;text-shadow:0 0 16px rgba(255,75,0,.45)}
+.btn{background:linear-gradient(135deg,#ff4d00,#ff007a);box-shadow:0 8px 28px rgba(255,52,0,.2)}
+.card,.panel,.modal,.stat{background:linear-gradient(145deg,rgba(17,20,32,.9),rgba(7,9,17,.94))!important;border:1px solid rgba(255,90,20,.16)!important;box-shadow:0 18px 60px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.035)}
+.hero{position:relative;overflow:hidden;border:1px solid rgba(255,80,20,.18);background:radial-gradient(circle at 80% 20%,rgba(255,60,0,.24),transparent 30%),radial-gradient(circle at 20% 80%,rgba(100,0,255,.22),transparent 34%),linear-gradient(135deg,rgba(12,14,25,.97),rgba(5,7,13,.95))!important}
+.hero:after{content:"⚡  POWDER ADI  ⚡  GAMER'S  ⚡  TOURNAMENT  ⚡";position:absolute;right:-80px;bottom:18px;transform:rotate(-8deg);font-size:12px;font-weight:900;letter-spacing:5px;color:rgba(255,90,20,.18);white-space:nowrap}
+.hero h1{font-size:clamp(36px,7vw,78px);line-height:.92;text-transform:uppercase;text-shadow:0 0 30px rgba(255,65,0,.22)}
+.hero h1 span{color:#ff5a00}
+input,select,textarea{background:rgba(0,0,0,.38)!important;border:1px solid rgba(255,255,255,.11)!important;color:#fff!important}
+nav button:hover{color:#ff6a00}
+.badge,.pill{border-color:rgba(255,90,20,.3)!important}
+.section-title{letter-spacing:1px}
+@media(max-width:700px){.app{padding:10px}.hero{padding:22px!important}.hero h1{font-size:42px}}
+</style>
+</head>
+<body><div class="app">
+<header><div class="logo"><div class="mark">LG</div><div>POWDER ADI GAMER'S <b>GAMING</b><small>POWDER ADI TOURNAMENTS</small></div></div><nav><button onclick="show('home')">Matches</button><button onclick="show('adminLogin')">Admin</button></nav></header>
+
+<main id="home">
+<section class="hero"><div class="eyebrow">POWDER ADI GAMER'S • POWDER ADI GAMER'S</div><h1>Play. Pay.<br>Get Your Slot.</h1><p>Book your tournament, upload payment proof and wait for admin verification. Once approved, your team name appears in the official tournament slots.</p><button class="btn" onclick="document.getElementById('matches').scrollIntoView({behavior:'smooth'})">View Matches</button></section>
+<section class="section" id="matches"><h2>Upcoming Matches</h2><div id="matchGrid" class="grid"></div></section>
+<section class="section"><h2>Confirmed Tournament Slots</h2><p class="muted">Only admin-approved payment bookings appear here.</p><div id="publicSlots"></div></section>
+</main>
+
+<section id="booking" class="hidden"><div class="form">
+<button class="btn gray small" onclick="show('home')">← Back</button><div class="steps"><i class="on"></i><i></i><i></i><i></i><i></i></div>
+<div id="b1"><h2>Step 1 — Match</h2><div id="chosen" class="notice"></div><button class="btn" onclick="bookStep(2)">Continue</button></div>
+<div id="b2" class="hidden"><h2>Step 2 — Team Details</h2><label>Team Name *</label><input id="player" placeholder="Enter team name"><label>Game UID / ID</label><input id="uid" placeholder="Game ID"><button class="btn" onclick="bookStep(3)">Continue</button></div>
+<div id="b3" class="hidden"><h2>Step 3 — Contact</h2><label>Mobile Number *</label><input id="phone" inputmode="numeric" placeholder="10-digit mobile"><button class="btn" onclick="bookStep(4)">Continue</button></div>
+<div id="b4" class="hidden"><h2>Step 4 — Payment Proof</h2><div id="paymentInfo" class="notice"></div><label>Upload Payment Screenshot *</label><div class="upload">📸 Select payment screenshot<input id="proof" type="file" accept="image/*" onchange="previewProof()"></div><img id="preview" class="proof hidden"><p class="muted">Upload the screenshot showing your payment confirmation. Admin will verify it before your team enters the confirmed slots.</p><button class="btn" onclick="bookStep(5)">Review Booking</button></div>
+<div id="b5" class="hidden"><h2>Step 5 — Submit</h2><div id="review" class="notice"></div><button class="btn" onclick="submitBooking()">Submit for Admin Verification</button></div>
+<div id="b6" class="hidden" style="text-align:center"><h2>⏳ Payment Verification Pending</h2><p class="muted">Admin will check your payment screenshot. Your team name will appear in confirmed slots only after approval.</p><button class="btn" onclick="show('home')">Done</button></div>
+</div></section>
+
+<section id="adminLogin" class="hidden"><div class="form"><h2>POWDER ADI GAMER'S • Admin</h2><p class="muted">Admin: <b>Durai. Jayavarma</b></p><label>Registered Mobile</label><input value="7092393882" readonly><label>OTP</label><input id="adminOtp" maxlength="6" inputmode="numeric" placeholder="6-digit OTP"><div class="notice">Demo OTP interface. Production SMS OTP must be verified by a secure backend.</div><button class="btn" onclick="adminLogin()">Verify & Open Dashboard</button></div></section>
+
+<section id="dashboard" class="hidden"><div class="section">
+<div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px"><div><div class="eyebrow">ADMIN CONTROL CENTER</div><h1>POWDER ADI GAMER'S Dashboard</h1><p class="muted">Verify payments, manage matches and control confirmed slots.</p></div><button class="btn gray" onclick="show('home')">View Website</button></div>
+<div class="stats"><div class="stat"><span class="muted">Matches</span><strong id="statMatches">0</strong></div><div class="stat"><span class="muted">Pending</span><strong id="statPending">0</strong></div><div class="stat"><span class="muted">Approved</span><strong id="statApproved">0</strong></div></div>
+<div class="panel"><div style="display:flex;justify-content:space-between;align-items:center"><h2>Payment Verification</h2></div><div class="tablewrap"><table class="table"><thead><tr><th>Team</th><th>Match</th><th>Mobile</th><th>Payment Screenshot</th><th>Status</th><th>Action</th></tr></thead><tbody id="paymentRows"></tbody></table></div></div>
+<div class="panel" style="margin-top:18px"><div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap"><h2>Manage Matches</h2><button class="btn" onclick="openMatchModal()">+ Add Match</button></div><div id="adminMatches" class="grid"></div></div>
+</div></section>
+
+<div id="modal" class="modal hidden"><div class="panel"><h2 id="modalTitle">Add Match</h2><label>Match Name</label><input id="mName"><label>Date & Time</label><input id="mTime"><label>Entry Fee</label><input id="mFee"><label>Status</label><input id="mStatus" value="UPCOMING"><div style="margin-top:18px"><button class="btn" onclick="saveMatch()">Save</button> <button class="btn gray" onclick="closeModal()">Cancel</button></div></div></div>
+<footer>© 2026 POWDER ADI GAMER'S • POWDER ADI GAMER'S Tournament Organisation</footer>
+</div>
+
+<script>
+const defaults=[{id:1,name:"Free Fire — Squad Clash",time:"Today • 8:00 PM • 4 players/team",fee:"₹50",status:"LIVE SOON"},{id:2,name:"BGMI — Battle Arena",time:"Tomorrow • 7:00 PM • Squad",fee:"₹100",status:"UPCOMING"},{id:3,name:"Valorant — 5v5 Cup",time:"Sunday • 6:00 PM • 5 players/team",fee:"₹150",status:"UPCOMING"}];
+let matches=JSON.parse(localStorage.getItem('lg_matches_v3')||'null')||defaults;
+let bookings=JSON.parse(localStorage.getItem('lg_bookings_v3')||'[]');
+let selected=null,editId=null,proofData='';
+function persist(){localStorage.setItem('lg_matches_v3',JSON.stringify(matches));localStorage.setItem('lg_bookings_v3',JSON.stringify(bookings))}
+function show(id){['home','booking','adminLogin','dashboard'].forEach(x=>document.getElementById(x).classList.toggle('hidden',x!==id));if(id==='home'){renderMatches();renderPublicSlots()}if(id==='dashboard')renderDashboard();scrollTo(0,0)}
+function renderMatches(){document.getElementById('matchGrid').innerHTML=matches.map(m=>`<div class="card"><span class="tag">${esc(m.status)}</span><h3>${esc(m.name)}</h3><p class="muted">${esc(m.time)}</p><div class="price">${esc(m.fee)}</div><button class="btn" onclick="startBook(${m.id})">Book Match</button></div>`).join('')||'<div class="empty">No matches available.</div>'}
+function renderPublicSlots(){let approved=bookings.filter(b=>b.status==='APPROVED');document.getElementById('publicSlots').innerHTML=approved.length?approved.map(b=>`<div class="slot"><b>${esc(b.team)}</b> <span class="muted">• ${esc(b.match)}</span><span style="float:right" class="status approved">✓ CONFIRMED</span></div>`).join(''):'<div class="empty">No confirmed slots yet.</div>'}
+function startBook(id){selected=matches.find(m=>m.id===id);resetBook();document.getElementById('chosen').textContent=selected.name+' • '+selected.time+' • Entry '+selected.fee;document.getElementById('paymentInfo').textContent='Pay '+selected.fee+' using your tournament payment method, then upload the payment screenshot below.';show('booking')}
+function resetBook(){proofData='';document.getElementById('preview').classList.add('hidden');document.getElementById('proof').value='';for(let i=1;i<=6;i++)document.getElementById('b'+i).classList.toggle('hidden',i!==1);document.querySelectorAll('.steps i').forEach((x,i)=>x.classList.toggle('on',i===0))}
+function bookStep(n){if(n===3&&!document.getElementById('player').value.trim())return alert('Team name enter pannunga.');if(n===4&&!/^\d{10}$/.test(document.getElementById('phone').value.trim()))return alert('Valid 10-digit mobile enter pannunga.');if(n===5&&!proofData)return alert('Payment screenshot upload pannunga.');if(n===5){document.getElementById('review').textContent=`Team: ${document.getElementById('player').value} • Match: ${selected.name} • Mobile: ${document.getElementById('phone').value} • Payment proof attached ✓`}for(let i=1;i<=6;i++)document.getElementById('b'+i).classList.toggle('hidden',i!==n);document.querySelectorAll('.steps i').forEach((x,i)=>x.classList.toggle('on',i<n))}
+function previewProof(){let f=document.getElementById('proof').files[0];if(!f)return;if(f.size>3*1024*1024)return alert('Screenshot 3MB-kulla irukkanum.');let r=new FileReader();r.onload=()=>{proofData=r.result;document.getElementById('preview').src=proofData;document.getElementById('preview').classList.remove('hidden')};r.readAsDataURL(f)}
+function submitBooking(){bookings.push({id:Date.now(),team:document.getElementById('player').value,uid:document.getElementById('uid').value,phone:document.getElementById('phone').value,match:selected.name,status:'PENDING',proof:proofData,time:new Date().toLocaleString()});persist();bookStep(6)}
+function adminLogin(){if(!/^\d{6}$/.test(document.getElementById('adminOtp').value.trim()))return alert('6-digit OTP enter pannunga.');show('dashboard')}
+function renderDashboard(){let p=bookings.filter(b=>b.status==='PENDING'),a=bookings.filter(b=>b.status==='APPROVED');document.getElementById('statMatches').textContent=matches.length;document.getElementById('statPending').textContent=p.length;document.getElementById('statApproved').textContent=a.length;
+document.getElementById('paymentRows').innerHTML=bookings.map(b=>`<tr><td><b>${esc(b.team)}</b><br><small>${esc(b.uid||'No UID')}</small></td><td>${esc(b.match)}</td><td>${esc(b.phone)}</td><td>${b.proof?`<img class="proof" src="${b.proof}" alt="Payment proof">`:''}</td><td class="status ${b.status.toLowerCase()}">${b.status}</td><td>${b.status==='PENDING'?`<div class="actions"><button class="btn green small" onclick="approve(${b.id})">Approve</button><button class="btn red small" onclick="rejectBook(${b.id})">Reject</button></div>`:'—'}</td></tr>`).join('')||'<tr><td colspan="6" class="empty">No bookings.</td></tr>';
+document.getElementById('adminMatches').innerHTML=matches.map(m=>`<div class="card"><span class="tag">${esc(m.status)}</span><h3>${esc(m.name)}</h3><p class="muted">${esc(m.time)}</p><b>${esc(m.fee)}</b><div class="actions" style="margin-top:14px"><button class="btn small" onclick="editMatch(${m.id})">Edit</button><button class="btn red small" onclick="deleteMatch(${m.id})">Delete</button></div></div>`).join('')}
+function approve(id){let b=bookings.find(x=>x.id===id);b.status='APPROVED';persist();renderDashboard();alert(b.team+' confirmed! Slot list-la team name add aayiduchu.')}
+function rejectBook(id){let b=bookings.find(x=>x.id===id);b.status='REJECTED';persist();renderDashboard()}
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]))}
+function openMatchModal(id=null){editId=id;let m=id&&matches.find(x=>x.id===id);document.getElementById('modalTitle').textContent=id?'Edit Match':'Add Match';document.getElementById('mName').value=m?.name||'';document.getElementById('mTime').value=m?.time||'';document.getElementById('mFee').value=m?.fee||'';document.getElementById('mStatus').value=m?.status||'UPCOMING';document.getElementById('modal').classList.remove('hidden')}
+function closeModal(){document.getElementById('modal').classList.add('hidden')}
+function saveMatch(){let o={name:mName.value.trim(),time:mTime.value.trim(),fee:mFee.value.trim(),status:mStatus.value.trim()||'UPCOMING'};if(!o.name)return alert('Match name enter pannunga.');if(editId)Object.assign(matches.find(x=>x.id===editId),o);else{o.id=Date.now();matches.push(o)}persist();closeModal();renderDashboard();renderMatches()}
+function editMatch(id){openMatchModal(id)}
+function deleteMatch(id){if(confirm('Match delete pannalama?')){matches=matches.filter(m=>m.id!==id);persist();renderDashboard();renderMatches()}}
+renderMatches();renderPublicSlots();
+</script></body></html>
